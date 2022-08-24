@@ -1,0 +1,16 @@
+PODS:
+  - Querl (0.1.0)
+
+DEPENDENCIES:
+  - Querl (from `../`)
+
+EXTERNAL SOURCES:
+  Querl:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Querl: c3c22c0c5b590a3a1ad39265a93244620b9c1033
+
+PODFILE CHECKSUM: fb7838a78512b1e150d811e64652440aa1a8f6ca
+
+COCOAPODS: 1.11.3

@@ -9,11 +9,21 @@
 /* Begin PBXBuildFile section */
 		21F954CF426BA3D434B8D998 /* Pods_Querl_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F29550CF0BB139710D96D4F /* Pods_Querl_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
+		607FACD81AFB9204008FA782 /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* CountryViewController.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		6C8B454428A465EA004436BD /* CountryQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8B454328A465EA004436BD /* CountryQueries.swift */; };
+		6C8B454A28A46664004436BD /* CountryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8B454928A46664004436BD /* CountryModels.swift */; };
+		6C8B454C28A46791004436BD /* CountryForCode.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 6C8B454B28A46791004436BD /* CountryForCode.graphql */; };
+		6C8B455028A46DAA004436BD /* CountryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8B454F28A46DAA004436BD /* CountryService.swift */; };
+		6C8B455528A57F3A004436BD /* URLRequest+Querl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8B455428A57F3A004436BD /* URLRequest+Querl.swift */; };
+		6C8B456128A59CEA004436BD /* StarWarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8B455C28A581C7004436BD /* StarWarsViewController.swift */; };
+		6C8B456228A59CED004436BD /* StarWarsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8B455B28A581C5004436BD /* StarWarsModels.swift */; };
+		6C8B456328A59CEF004436BD /* StarWarsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8B455828A581BF004436BD /* StarWarsService.swift */; };
+		6C8B456428A59CF1004436BD /* StarWarsQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8B455928A581C1004436BD /* StarWarsQueries.swift */; };
+		6C8B456528A59CF4004436BD /* NextFilm.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 6C8B455A28A581C3004436BD /* NextFilm.graphql */; };
+		6C8B456728A59DE5004436BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C8B456628A59DE5004436BD /* Main.storyboard */; };
 		914739CFBBEEB6C07B2C230C /* Pods_Querl_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C68266166C3B1F410AC41F87 /* Pods_Querl_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,25 +38,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03D6EEAA116855DCFE94BFDE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		03D6EEAA116855DCFE94BFDE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		1C7C3AA0B8FE3AE5EA9D19CC /* Pods-Querl_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Querl_Tests.debug.xcconfig"; path = "Target Support Files/Pods-Querl_Tests/Pods-Querl_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		487B83697AA9A67A7CF3E28E /* Pods-Querl_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Querl_Example.debug.xcconfig"; path = "Target Support Files/Pods-Querl_Example/Pods-Querl_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4FA58217FB60F47C9BC8B771 /* Querl.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Querl.podspec; path = ../Querl.podspec; sourceTree = "<group>"; };
+		4FA58217FB60F47C9BC8B771 /* Querl.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Querl.podspec; path = ../Querl.podspec; sourceTree = "<group>"; };
 		5CB62674D522A3213CC39D56 /* Pods-Querl_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Querl_Tests.release.xcconfig"; path = "Target Support Files/Pods-Querl_Tests/Pods-Querl_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Querl_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Querl_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		607FACD71AFB9204008FA782 /* CountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* Querl_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Querl_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		6C8B454328A465EA004436BD /* CountryQueries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryQueries.swift; sourceTree = "<group>"; };
+		6C8B454928A46664004436BD /* CountryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModels.swift; sourceTree = "<group>"; };
+		6C8B454B28A46791004436BD /* CountryForCode.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = CountryForCode.graphql; sourceTree = "<group>"; };
+		6C8B454F28A46DAA004436BD /* CountryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryService.swift; sourceTree = "<group>"; };
+		6C8B455428A57F3A004436BD /* URLRequest+Querl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Querl.swift"; sourceTree = "<group>"; };
+		6C8B455828A581BF004436BD /* StarWarsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsService.swift; sourceTree = "<group>"; };
+		6C8B455928A581C1004436BD /* StarWarsQueries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsQueries.swift; sourceTree = "<group>"; };
+		6C8B455A28A581C3004436BD /* NextFilm.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = NextFilm.graphql; sourceTree = "<group>"; };
+		6C8B455B28A581C5004436BD /* StarWarsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsModels.swift; sourceTree = "<group>"; };
+		6C8B455C28A581C7004436BD /* StarWarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsViewController.swift; sourceTree = "<group>"; };
+		6C8B456628A59DE5004436BD /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8F29550CF0BB139710D96D4F /* Pods_Querl_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Querl_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C68266166C3B1F410AC41F87 /* Pods_Querl_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Querl_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC93E870005473A290939042 /* Pods-Querl_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Querl_Example.release.xcconfig"; path = "Target Support Files/Pods-Querl_Example/Pods-Querl_Example.release.xcconfig"; sourceTree = "<group>"; };
-		DE95148603AA38F7E142D05A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DE95148603AA38F7E142D05A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +97,6 @@
 				1C7C3AA0B8FE3AE5EA9D19CC /* Pods-Querl_Tests.debug.xcconfig */,
 				5CB62674D522A3213CC39D56 /* Pods-Querl_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -105,12 +124,14 @@
 		607FACD21AFB9204008FA782 /* Example for Querl */ = {
 			isa = PBXGroup;
 			children = (
+				6C8B455428A57F3A004436BD /* URLRequest+Querl.swift */,
+				6C8B455628A57F4B004436BD /* Countries */,
+				6C8B455728A57FAB004436BD /* Star Wars */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				6C8B456628A59DE5004436BD /* Main.storyboard */,
 			);
 			name = "Example for Querl";
 			path = Querl;
@@ -149,6 +170,30 @@
 				03D6EEAA116855DCFE94BFDE /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		6C8B455628A57F4B004436BD /* Countries */ = {
+			isa = PBXGroup;
+			children = (
+				6C8B454B28A46791004436BD /* CountryForCode.graphql */,
+				6C8B454928A46664004436BD /* CountryModels.swift */,
+				6C8B454328A465EA004436BD /* CountryQueries.swift */,
+				6C8B454F28A46DAA004436BD /* CountryService.swift */,
+				607FACD71AFB9204008FA782 /* CountryViewController.swift */,
+			);
+			name = Countries;
+			sourceTree = "<group>";
+		};
+		6C8B455728A57FAB004436BD /* Star Wars */ = {
+			isa = PBXGroup;
+			children = (
+				6C8B455A28A581C3004436BD /* NextFilm.graphql */,
+				6C8B455B28A581C5004436BD /* StarWarsModels.swift */,
+				6C8B455928A581C1004436BD /* StarWarsQueries.swift */,
+				6C8B455828A581BF004436BD /* StarWarsService.swift */,
+				6C8B455C28A581C7004436BD /* StarWarsViewController.swift */,
+			);
+			name = "Star Wars";
 			sourceTree = "<group>";
 		};
 		EF0CABF35554F72894757AA0 /* Frameworks */ = {
@@ -218,7 +263,6 @@
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
-						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
 			};
@@ -227,6 +271,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -246,7 +291,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				6C8B456728A59DE5004436BD /* Main.storyboard in Resources */,
+				6C8B456528A59CF4004436BD /* NextFilm.graphql in Resources */,
+				6C8B454C28A46791004436BD /* CountryForCode.graphql in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -331,8 +378,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				6C8B455028A46DAA004436BD /* CountryService.swift in Sources */,
+				607FACD81AFB9204008FA782 /* CountryViewController.swift in Sources */,
+				6C8B456228A59CED004436BD /* StarWarsModels.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				6C8B456328A59CEF004436BD /* StarWarsService.swift in Sources */,
+				6C8B456128A59CEA004436BD /* StarWarsViewController.swift in Sources */,
+				6C8B454428A465EA004436BD /* CountryQueries.swift in Sources */,
+				6C8B456428A59CF1004436BD /* StarWarsQueries.swift in Sources */,
+				6C8B454A28A46664004436BD /* CountryModels.swift in Sources */,
+				6C8B455528A57F3A004436BD /* URLRequest+Querl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,14 +410,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDA1AFB9204008FA782 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -419,7 +466,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -465,7 +512,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -479,6 +526,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Querl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -494,6 +542,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Querl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -521,7 +570,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Querl_Example.app/Querl_Example";
 			};
 			name = Debug;
 		};
@@ -539,7 +587,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Querl_Example.app/Querl_Example";
 			};
 			name = Release;
 		};

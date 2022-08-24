@@ -1,0 +1,15 @@
+query($pageSize: Int! = 1, $afterCursor: String) {
+  allFilms(first: $pageSize, after: $afterCursor) {
+      pageInfo {
+        hasNextPage
+        hasPreviousPage
+        startCursor
+        endCursor
+      }
+      nodes: films {
+        id
+        title
+        openingCrawl
+      }
+    }
+}

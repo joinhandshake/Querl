@@ -1,0 +1,22 @@
+{
+  "name": "Querl",
+  "version": "0.1.0",
+  "summary": "A short description of Querl.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Joel Kin/Querl",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Joel Kin": "joel@joinhandshake.com"
+  },
+  "source": {
+    "git": "https://github.com/Joel Kin/Querl.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "Querl/Classes/**/*"
+}

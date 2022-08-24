@@ -9,34 +9,27 @@
 Pod::Spec.new do |s|
   s.name             = 'Querl'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of Querl.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'A minimal GraphQL client library.'
+  s.swift_versions   = ['5.0']
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Querl is a minimal GraphQL client library. It aims to be agnostic as to the architecture and technology choices of your app. It can be used with any networking stack, and makes no assumptions about how your models are defined. In addition, it is as Swift-y as possible: protocol-oriented, type-safe, and chock full of generics. It has no dependencies, and comprises less than 200 lines of easily auditable code.
                        DESC
 
-  s.homepage         = 'https://github.com/Joel Kin/Querl'
+  s.homepage         = 'https://github.com/joinhandshake/Querl'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Joel Kin' => 'joel@joinhandshake.com' }
-  s.source           = { :git => 'https://github.com/Joel Kin/Querl.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  # s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.author           = { 'Handshake' => 'open-source@joinhandshake.com' }
+  s.source           = { :git => 'https://github.com/joinhandshake/Querl.git', :tag => s.version.to_s }
+  #  s.social_media_url = 'https://twitter.com/myunderpants'
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'Querl/Classes/**/*'
+  s.source_files = 'Sources/Querl/Classes/**/*'
   
   # s.resource_bundles = {
   #   'Querl' => ['Querl/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'Foundation'
 end
