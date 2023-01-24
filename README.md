@@ -104,7 +104,7 @@ See [CODE_OF_CONDUCT.md](https://github.com/joinhandshake/.github/blob/main/CODE
 
 ## Author
 
-Joel Kin, open-source@joinhandshake.com, [@myunderpants](http://twitter.com/myunderpants/)
+Joel Kin, open-source@joinhandshake.com, [@foon@mastodon.social](http://mastodon.social/@foon)
 
 ## License
 
