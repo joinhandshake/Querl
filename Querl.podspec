@@ -18,12 +18,12 @@ Querl is a minimal GraphQL client library. It aims to be agnostic as to the arch
 
   s.homepage         = 'https://github.com/joinhandshake/Querl'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  # s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = { :type => 'Apache 2.0', :file => 'LICENSE' }
   s.author           = { 'Handshake' => 'open-source@joinhandshake.com' }
   s.source           = { :git => 'https://github.com/joinhandshake/Querl.git', :tag => s.version.to_s }
-  #  s.social_media_url = 'https://twitter.com/myunderpants'
+   s.social_media_url = 'https://mastodon.social/@foon'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '11.0'
 
   s.source_files = 'Sources/Querl/Classes/**/*'
   

@@ -68,7 +68,7 @@ This pattern can be easily adapted to Alamofire, or any other networking library
 
 ## Requirements
 
-Querl requires iOS 10.0 or higher. 
+Querl requires iOS 11.0 or higher. 
 
 ## Installation
 
