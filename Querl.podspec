@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Querl'
-  s.version          = '0.1.0'
+  s.version          = '0.1.2'
   s.summary          = 'A minimal GraphQL client library.'
   s.swift_versions   = ['5.0']
 
