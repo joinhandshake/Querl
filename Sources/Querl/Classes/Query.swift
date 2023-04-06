@@ -54,7 +54,7 @@ struct WrappedQueryResponse<T: Decodable>: Decodable {
 }
 
 public extension Query {
-    static func decodeResponse(_ data: Data) throws -> Response {
-        try JSONDecoder().decode(WrappedQueryResponse<Response>.self, from: data).data
+    static func decodeResponse(_ data: Data, decoder: JSONDecoder = JSONDecoder()) throws -> Response {
+        try decoder.decode(WrappedQueryResponse<Response>.self, from: data).data
     }
 }
