@@ -49,9 +49,10 @@ public enum PagedResponseError: Error {
 public extension PagedResponse {
     /// Generate a `PagedResponse` container
     /// - Parameters:
-    ///   - result: The result of a GraphQL network request
+    ///   - data: The result of a GraphQL network request
+    ///   - decoder: `JSONDecoder` instance to use for decoding. Default `JSONDecoder` provided.
     /// - Throws: This initializer throws the usual JSON decoding errors, as well as errors if the given `connectionPath` does not end in a decodable `Connection` section.
-    init(_ data: Data) throws {
+    init(_ data: Data, decoder: JSONDecoder = JSONDecoder()) throws {
         guard let json = try JSONSerialization.jsonObject(with: data) as? [String: Any] else {
             throw PagedResponseError.incorrectFormat
         }
@@ -63,14 +64,14 @@ public extension PagedResponse {
         
         if let pageInfoJSON = connectionRoot["pageInfo"] {
             let pageInfoData = try JSONSerialization.data(withJSONObject: pageInfoJSON)
-            pageInfo = try JSONDecoder().decode(Pagination.self, from: pageInfoData)
+            pageInfo = try decoder.decode(Pagination.self, from: pageInfoData)
         } else {
             throw PagedResponseError.pageInfoNotFound
         }
         
         if let nodesJSON = connectionRoot["nodes"] {
             let nodesData = try JSONSerialization.data(withJSONObject: nodesJSON)
-            nodes = try JSONDecoder().decode([Q.PaginatedType].self, from: nodesData)
+            nodes = try decoder.decode([Q.PaginatedType].self, from: nodesData)
                 response = try Q.decodeResponse(data)
         } else {
             throw PagedResponseError.nodesNotFound
