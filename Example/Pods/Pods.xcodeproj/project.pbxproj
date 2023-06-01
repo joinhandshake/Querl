@@ -45,10 +45,10 @@
 		0EDF164D2782980DFA32777578AB2C57 /* Pods-Querl_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Querl_Tests-dummy.m"; sourceTree = "<group>"; };
 		102513FFE23B672DE659118290F268DE /* Pods-Querl_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Querl_Example.modulemap"; sourceTree = "<group>"; };
 		20A0E4880E09C8627B027BD50224FD80 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		24315728C628F03508D33AD60175430A /* Pods-Querl_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Querl_Tests"; path = Pods_Querl_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24315728C628F03508D33AD60175430A /* Pods_Querl_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Querl_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE42341694F83F8BF726B59037C57E7 /* Pods-Querl_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Querl_Example-Info.plist"; sourceTree = "<group>"; };
 		309AD0DD0DFA3142BA39B12003A5C19A /* Pods-Querl_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Querl_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		32CB18C999518795BE624DD1B3205B24 /* Querl */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Querl; path = Querl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32CB18C999518795BE624DD1B3205B24 /* Querl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Querl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47FA37BCF937A9B456DA749313311511 /* Querl-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Querl-Info.plist"; sourceTree = "<group>"; };
 		4859B61ED047EC08E02270040A07D200 /* Querl-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Querl-prefix.pch"; sourceTree = "<group>"; };
 		58706E8574724E2F77213E3EF3814D0E /* Pods_Querl_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Querl_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -200,8 +200,8 @@
 			isa = PBXGroup;
 			children = (
 				58706E8574724E2F77213E3EF3814D0E /* Pods_Querl_Example.framework */,
-				24315728C628F03508D33AD60175430A /* Pods-Querl_Tests */,
-				32CB18C999518795BE624DD1B3205B24 /* Querl */,
+				24315728C628F03508D33AD60175430A /* Pods_Querl_Tests.framework */,
+				32CB18C999518795BE624DD1B3205B24 /* Querl.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -281,7 +281,7 @@
 			);
 			name = "Pods-Querl_Tests";
 			productName = Pods_Querl_Tests;
-			productReference = 24315728C628F03508D33AD60175430A /* Pods-Querl_Tests */;
+			productReference = 24315728C628F03508D33AD60175430A /* Pods_Querl_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		BE2F714C9BC8DD44FF5E77DCB8BA4465 /* Querl */ = {
@@ -299,7 +299,7 @@
 			);
 			name = Querl;
 			productName = Querl;
-			productReference = 32CB18C999518795BE624DD1B3205B24 /* Querl */;
+			productReference = 32CB18C999518795BE624DD1B3205B24 /* Querl.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D0FF142B74C58B23AFFE9942DCA631BF /* Pods-Querl_Example */ = {
@@ -443,7 +443,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Querl/Querl-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Querl/Querl-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Querl/Querl.modulemap";
 				PRODUCT_MODULE_NAME = Querl;
@@ -475,7 +475,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-Querl_Tests/Pods-Querl_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Querl_Tests/Pods-Querl_Tests.modulemap";
@@ -509,7 +509,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-Querl_Example/Pods-Querl_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Querl_Example/Pods-Querl_Example.modulemap";
@@ -545,7 +545,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-Querl_Example/Pods-Querl_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Querl_Example/Pods-Querl_Example.modulemap";
@@ -641,7 +641,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Querl/Querl-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Querl/Querl-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Querl/Querl.modulemap";
 				PRODUCT_MODULE_NAME = Querl;
@@ -738,7 +738,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-Querl_Tests/Pods-Querl_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Querl_Tests/Pods-Querl_Tests.modulemap";
